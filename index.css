@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    display: border-box;
+}
+
+body {
+    background-color: #0f0100;
+    color: white;
+}
+
+#defaultCanvas0, #info {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -50px;
+    text-align: center;
+}
+
+#defaultCanvas0 {
+    top: 25%;
+    left: 25%;
+}
+
+#info {
+    width: 25%;
+    height: 25%;
+    top: 75%;
+    left: 37%;
+}

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="../index.css">
 </head>
 
 <body>
@@ -20,18 +20,27 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="html/aStar.html">A-star <span class="sr-only">(current)</span></a>
+        <li class="nav-item ">
+          <a class="nav-link" href="aStar.html">A-star <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="dijkstra.html">Dijkstra</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="html/dijkstra.html">Dijkstra</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="html/bubblesort.html">Bubble sort</a>
+          <a class="nav-link" href="bubblesort.html">Bubble sort</a>
         </li>
       </ul>
     </div>
   </nav>
+  <div id="info">
+    <h4>First click sets start node</h4>
+    <h4>Second click sets end node</h4>
+    <h4>Click, hold and drag to set walls</h4>
+    <button onclick="startDijkstra()">Start dijkstra</button>
+    <button onclick="setup()">Reset canvas</button>
+  </div>
+  <script src="../p5.js"></script>
+  <script src="../sketches/dijkstra.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>

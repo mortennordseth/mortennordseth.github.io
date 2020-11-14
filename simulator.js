@@ -5,9 +5,6 @@ let startButton = document.getElementById('startButton').addEventListener("click
 });
 let stopButton = document.getElementById('stopButton').addEventListener("click", () => {
     noLoop();
-});
-let resetButton = document.getElementById('resetButton').addEventListener("click", () => {
-    noLoop();
     t0 = Date.now();
     counter = 0;
 });

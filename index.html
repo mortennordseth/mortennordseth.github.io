@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Visualizations</title>
+  <title>Simulator</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -12,26 +12,20 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Visualizations</a>
+    <a class="navbar-brand" href="index.html">TDT4259 - Group assignment</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="html/aStar.html">A-star <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="html/dijkstra.html">Dijkstra</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="html/bubblesort.html">Bubble sort</a>
-        </li>
-      </ul>
+      <button class="btn" id="startButton">Start simulation</button>
+      <button class="btn" id="stopButton">Stop simulation</button>
+      <button class="btn" id="resetButton">Reset simulation</button>
     </div>
   </nav>
+  <script src="./p5.js"></script>
+  <script src="./simulationData.js"></script>
+  <script src="./simulator.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
